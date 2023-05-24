@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.shake {
+  animation: shaking 0.2s 2;
+}
+@font-face {
+  font-family: poppins;
+  src: url(./fonts/Poppins-Regular.ttf);
+}
+* {
+  font-family: poppins;
+}
+@keyframes shaking {
+  25% {
+    translate: 6px 0;
+  }
+  50% {
+    translate: -6px 0;
+  }
+  75% {
+    translate: 6px 0;
+  }
+}
+
+/* input[type="date"]::before {
+  content: attr(placeholder);
+  position: absolute;
+  color: #999999;
+}
+
+input[type="date"] {
+  color: #ffffff;
+}
+
+input[type="date"]:focus,
+input[type="date"]:valid {
+  color: #666666;
+}
+
+input[type="date"]:focus::before,
+input[type="date"]:valid::before {
+  content: "";
+} */
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+
+  color: white;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+
+  color: white;
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+
+  color: white;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+
+  color: white;
+}
